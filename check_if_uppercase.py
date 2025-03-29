@@ -1,9 +1,11 @@
+#Input word or phrases
+#check if its in uppercase and print yes if uppercase
+
 def is_all_uppercase(s):
     return all(not ('a' <= char <= 'z') for char in s) and bool(s)  # Check all characters
 
-# Example usage
-name = input("Enter your name: ")
+name = input("Enter a words or phrases : ")
 if is_all_uppercase(name):
-    print("Your name is in uppercase.")
+    print("Yes.")
 else:
-    print("Your name is not in uppercase.")
+    print("Not.")
